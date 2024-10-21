@@ -1,0 +1,55 @@
+---
+import "../styles/global.css";
+---
+
+<section class="categori">
+  <a href="listview.astro"
+    ><div>
+      <img src="kategorilineup.svg" alt="kategorilineup" />
+      <h2>SE VORES LINEUP</h2>
+      <p>Klik ind og se det vilde Lineup af kunstnere!</p>
+    </div>
+  </a>
+
+  <div>
+    <img src="kategoriprogram.svg" alt="kategoriprogram" />
+    <h2>SE VORES PROGRAM</h2>
+    <p>Klik ind og få et overblik over programmet for hver af dagene!</p>
+  </div>
+</section>
+
+<style>
+  .categori {
+    display: grid;
+    padding: 10rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--Black);
+  }
+
+  a:hover h2 {
+    text-decoration: underline;
+  }
+
+  h2 {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
+  @media (width <= 800px) {
+    /* Ved mobile størrelse */
+    .categori {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (width > 800px) {
+    /* Ved desktop størrelse */
+    .categori {
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+    }
+  }
+</style>

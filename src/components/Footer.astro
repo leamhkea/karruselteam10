@@ -1,0 +1,47 @@
+---
+import "../styles/global.css";
+---
+
+<section class="footer">
+  <div>
+    <h2>ADDRESS</h2>
+    <p>Refshalevej 193,</p>
+    <p>1432 Copenhagen</p>
+  </div>
+
+  <div>
+    <h2>CONTACT</h2>
+    <p>Mail: <u>info@nusnus.dk</u></p>
+    <p>Karrusel is organized by <u>Nus Nus</u></p>
+  </div>
+
+  <div>
+    <h2>OPENING HOURS</h2>
+    <p>Thursday 22 Aug 2024: 18.00-01.00</p>
+    <p>Friday 23 Aug 2024: 18.00-04.00</p>
+    <p>Saturday 24 Aug 2024: 18.00-03.00</p>
+  </div>
+
+  <div>
+    <h2>ABOUT</h2>
+    <p><u>About Karrusel Festival</u></p>
+    <p><u>Want to be a Volunteer?</u></p>
+    <p><u>FAQ</u></p>
+  </div>
+</section>
+
+<style>
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 4rem;
+    padding: var(--Padding);
+    background-image: url("gradient.svg");
+    color: var(--White);
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+</style>

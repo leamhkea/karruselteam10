@@ -1,0 +1,68 @@
+---
+import "../styles/global.css";
+---
+
+<section class="nyhedsbrev">
+  <div>
+    <h2>NYHEDSBREV</h2>
+    <p>
+      Vil du være blandt de første til at få de nyeste opdateringer og spændende
+      nyheder om Karrusel Festival? Tilmeld dig vores nyhedsbrev, og gå ikke
+      glip af noget!
+    </p>
+  </div>
+
+  <div>
+    <h2>MAIL</h2>
+    <div class="Kontaktformular">
+      <form>
+        <input
+          id="Email"
+          placeholder="Skriv din mail"
+          name="Email"
+          type="email"
+        />
+      </form>
+    </div>
+  </div>
+</section>
+
+<style>
+  .nyhedsbrev {
+    background-color: var(--Red);
+    display: grid;
+    align-content: start;
+    padding: var(--Padding);
+    color: white;
+  }
+
+  h2,
+  p,
+  form {
+    padding-bottom: 2rem;
+  }
+
+  input {
+    font-family: var(--Primær-Brødtekst-Font);
+    width: 70%;
+    background-color: var(--Red);
+    border-color: var(--White);
+    color: var(--White);
+  }
+
+  @media (width <= 800px) {
+    /* Ved mobile størrelse */
+    .nyhedsbrev {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+
+  @media (width > 800px) {
+    /* Ved desktop størrelse */
+    .nyhedsbrev {
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+    }
+  }
+</style>
