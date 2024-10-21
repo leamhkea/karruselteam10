@@ -1,0 +1,28 @@
+---
+import ArtistCard from "../../components/ArtistCard.astro"
+
+  const url = "https://alvenwirzpgcdjpfhrzm.supabase.co/rest/v1/karrussel";
+  const options = {
+    headers: {
+      apikey:
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFsdmVud2lyenBnY2RqcGZocnptIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mjk1MTAzMzksImV4cCI6MjA0NTA4NjMzOX0.bnOeKs799xzM-adiHsVFkHdvJw_lZ-Ri4JAsV6Uvsd4",
+    },
+  };
+
+  const artists = await fetch(url, options).then((res) => res.json());
+---
+<h1>Lineup</h1>
+<h2>THURSDAY 22 AUG 2024</h2>
+<h2>OPENING HOURS: 18.00-01.00</h2>
+<ul>
+    {
+        artists.map(artist => <ArtistCard data={artist} />)
+    }
+</ul>
+
+
+<style>
+    h1, h2{
+        text-align: center;
+    }
+</style>
