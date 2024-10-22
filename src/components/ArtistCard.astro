@@ -3,4 +3,12 @@ const { data } = Astro.props;
 console.log(data)
 ---
 
-<li>{data.artist}</li>
+<li>
+    <a href={"artists/"+data.slug + "/"}>
+    <figure>
+    <h3>{data.artist}</h3>
+    <p>{data.time}</p>
+    <img src={"images/"+data.image} alt={data.artist}>
+</figure>
+</a>
+</li>

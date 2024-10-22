@@ -1,23 +1,12 @@
 ---
-import "../styles/global.css";
 import "../styles/index.css";
+import Main from "./layouts/Main.astro";
 import Banner from "../components/Banner.astro";
-import Footer from "../components/Footer.astro";
-import Header from "../components/Header.astro";
 import Nyhedsbrev from "../components/Nyhedsbrev.astro";
 import Categori from "../components/Categori.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-  </head>
-  <body>
-    <Header />
+<Main>
     <section class="herosection">
       <h1>KARRUSEL</h1>
       <h3 class="h3-date">27-29 TH AUGUST</h3>
@@ -27,6 +16,4 @@ import Categori from "../components/Categori.astro";
     <Banner />
     <Categori />
     <Nyhedsbrev />
-    <Footer />
-  </body>
-</html>
+  </Main>
