@@ -106,7 +106,11 @@ import "../styles/global.css";
   .menu > li a {
     font-family: var(--Sekundær-Header-Font);
     text-decoration: none;
+    border: 10px solid transparent; /* Bruges til at skabe plads til billedkanten */
+    border-image: url("path/to/your-image.png") 30 round; /* Tilføj billedet som kant */
+    border-radius: 5px; /* Bevarer afrundede hjørner */
   }
+
   .menu {
     display: flex;
     flex-direction: row;
