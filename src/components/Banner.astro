@@ -1,3 +1,56 @@
 ---
-
+import "../styles/global.css";
 ---
+
+<div class="ticket-banner">
+    <div class="marquee">
+        <span class="marquee-text">BUY TICKETS HERE</span>
+        <span class="marquee-text">BUY TICKETS HERE</span>
+        <span class="marquee-text">BUY TICKETS HERE</span>
+    </div>
+</div>
+
+
+<style>
+.ticket-banner {
+    background: linear-gradient(to right, #2e3192, #e02a2a); /* Laver en gradientbaggrund */
+    height: 150px; /* Justér højden som ønsket */
+    display: flex;
+    align-items: center;
+    overflow: hidden; /* Skjuler eventuel overskydende tekst */
+    position: relative;
+}
+
+.marquee {
+    display: flex;
+    animation: scroll-text 10s linear infinite; /* Teksten bevæger sig horisontalt */
+}
+
+.marquee-text {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    margin: 0 50px;
+    white-space: nowrap; /* Sørger for, at teksten ikke brydes */
+    position: relative;
+}
+
+.marquee-text::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white; /* Understregning af teksten */
+    margin-top: 10px;
+}
+
+@keyframes scroll-text {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+</style>
