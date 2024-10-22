@@ -7,6 +7,7 @@ import "../styles/global.css";
         <span class="marquee-text">BUY TICKETS HERE</span>
         <span class="marquee-text">BUY TICKETS HERE</span>
         <span class="marquee-text">BUY TICKETS HERE</span>
+        <span class="marquee-text">BUY TICKETS HERE</span>
     </div>
 </div>
 
@@ -14,26 +15,29 @@ import "../styles/global.css";
 <style>
 .ticket-banner {
     background: linear-gradient(to right, #2e3192, #e02a2a); /* Laver en gradientbaggrund */
-    height: 150px; /* Justér højden som ønsket */
+    height: 140px; /* Justér højden som ønsket */
     display: flex;
     align-items: center;
     overflow: hidden; /* Skjuler eventuel overskydende tekst */
     position: relative;
+    margin-top: 50px;
 }
 
 .marquee {
     display: flex;
-    animation: scroll-text 10s linear infinite; /* Teksten bevæger sig horisontalt */
+    animation: scroll-text 15s linear infinite; /* Teksten bevæger sig horisontalt */
 }
 
 .marquee-text {
-    font-size: 2em;
+    font-family: var(--Sekundær-Banner-Font);
+    font-size: 26px;
     font-weight: bold;
     color: white;
     text-transform: uppercase;
-    margin: 0 50px;
+    margin: 0 80px;
     white-space: nowrap; /* Sørger for, at teksten ikke brydes */
     position: relative;
+    letter-spacing: 0.3cap;
 }
 
 .marquee-text::after {
@@ -47,10 +51,10 @@ import "../styles/global.css";
 
 @keyframes scroll-text {
     0% {
-        transform: translateX(100%);
+        transform: translateX(-100%);
     }
     100% {
-        transform: translateX(-100%);
+        transform: translateX(100%);
     }
 }
 </style>
