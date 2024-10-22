@@ -18,6 +18,8 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: var(--Primær-H1-Size);
+  letter-spacing: 0.2cap;
+  padding-bottom: 30px;
 }
 
 h3 {

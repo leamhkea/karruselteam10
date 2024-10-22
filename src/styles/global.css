@@ -24,7 +24,7 @@ img {
 
 :root {
   /* Font Family */
-  --Primær-H1-Font: "Jersey 20", sans-serif;
+  --Primær-H1-Font: "gloridot", sans-serif;
   --Primær-H2-Font: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   --Primær-H3-Font: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   --Primær-Brødtekst-Font: "Courier New", Courier, monospace;
@@ -32,7 +32,7 @@ img {
   --Sekundær-Header-Font: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 
   /* Font Size */
-  --Primær-H1-Size: 10rem;
+  --Primær-H1-Size: 7rem;
   --Primær-H2-Size: 3rem;
   --Primær-H3-Size: 1.5rem;
   --Primær-Brødtekst-Size: 1.2rem;
