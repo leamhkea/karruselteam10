@@ -1,0 +1,10 @@
+.herosection {
+  background-image: url("herosection.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+h1,
+h3 {
+  text-align: center;
+}
