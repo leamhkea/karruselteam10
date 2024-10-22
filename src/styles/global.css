@@ -6,7 +6,7 @@
 }
 
 h1 {
-  font-family: var(--Primær-H1-Font);
+  font-family: "Times New Roman", Times, serif;
 }
 
 h2 {
@@ -24,7 +24,7 @@ img {
 
 :root {
   /* Font Family */
-  --Primær-H1-Font: "VT323", monospace;
+  --Primær-H1-Font: Jersey 25;
   --Primær-H2-Font: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   --Primær-H3-Font: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   --Primær-Brødtekst-Font: "Courier New", Courier, monospace;
@@ -35,7 +35,7 @@ img {
   --Primær-H1-Size: 8rem;
   --Primær-H2-Size: 3rem;
   --Primær-H3-Size: 1.5rem;
-  --Primær-Brødtekst-Size: 1.2rem;
+  --Primær-Brødtekst-Size: 3rem;
   --Sekundær-Banner-Size: 3rem;
   --Sekundær-Header-Size: 3rem;
 
