@@ -28,14 +28,16 @@ img {
   --Primær-H2-Font: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   --Primær-H3-Font: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   --Primær-Brødtekst-Font: "Courier New", Courier, monospace;
-  --Sekundær-Banner-Font: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  --Sekundær-Header-Font: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  --Sekundær-Banner-Font: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+  --Sekundær-Header-Font: "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
 
   /* Font Size */
   --Primær-H1-Size: 6rem;
   --Primær-H2-Size: 3rem;
   --Primær-H3-Size: 1.5rem;
-  --Primær-Brødtekst-Size: 3rem;
+  --Primær-Brødtekst-Size: 1.2rem;
   --Sekundær-Banner-Size: 3rem;
   --Sekundær-Header-Size: 3rem;
 
