@@ -1,10 +1,26 @@
 .herosection {
   background-image: url("herosection.webp");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+  background-size: cover; /* Dækker hele området uden at forvrænge billedet */
+  background-position: center; /* Centrer billedet */
+  background-repeat: no-repeat; /* Undgå gentagelse af billedet */
+  height: 100vh; /* Fyld hele browserens højde */
+  width: 100vw; /* Fyld hele browserens bredde */
+  overflow: hidden;
+  margin: 0;
 }
 
 h1,
 h3 {
   text-align: center;
+  color: var(--White);
+  line-height: [heightofbox];
+  display: block;
+}
+
+h1 {
+  font-family: var(--Primær-H1-Font);
+}
+
+h3 {
+  font-family: var(--Primær-H3-Font);
 }
