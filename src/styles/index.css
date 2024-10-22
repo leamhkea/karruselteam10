@@ -38,3 +38,10 @@ h3 {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+@media (width < 800px) {
+  /* ved desktop */
+  h1 {
+    font-size: 5rem;
+  }
+}
