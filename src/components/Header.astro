@@ -12,11 +12,11 @@ import "../styles/global.css";
   </label>
   <nav>
     <ul class="menu">
-      <li><a href="">PROGRAM</a></li>
+      <li><a href="(artist.astro)">PROGRAM</a></li>
       <li><a href="">MAP</a></li>
       <li><a href="">GALLERY</a></li>
       <li><a href="">LINEUP</a></li>
-      <li><a href="">TICKETS</a></li>
+      <li id="ticket"><a href="">TICKETS</a></li>
     </ul>
   </nav>
 </section>
@@ -105,8 +105,15 @@ import "../styles/global.css";
   }
   .menu > li a {
     font-family: var(--Sekundær-Header-Font);
+    color: black;
     text-decoration: none;
+    border: 4px solid;
+    border-color: linear-gradient(#b62218, #2930a6);
+    border-radius: 5em;
+    padding-left: 1em;
+    padding-right: 1em;
   }
+
   .menu {
     display: flex;
     flex-direction: row;
