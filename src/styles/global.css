@@ -6,7 +6,7 @@
 }
 
 h1 {
-  font-family: "Times New Roman", Times, serif;
+  font-family: var(--Primær-H1-Font);
 }
 
 h2 {
@@ -24,7 +24,7 @@ img {
 
 :root {
   /* Font Family */
-  --Primær-H1-Font: Jersey 25;
+  --Primær-H1-Font: "VT323", monospace;
   --Primær-H2-Font: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   --Primær-H3-Font: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   --Primær-Brødtekst-Font: "Courier New", Courier, monospace;
