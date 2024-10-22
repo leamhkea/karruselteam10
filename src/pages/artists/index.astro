@@ -13,7 +13,7 @@ import Main from "../layouts/Main.astro";
   const artists = await fetch(url, options).then((res) => res.json());
 ---
 <Main>
-<h1>Lineup</h1>
+<h1>LINEUP</h1>
 <h2>THURSDAY 22 AUG 2024</h2>
 <h2>OPENING HOURS: 18.00-01.00</h2>
 <ul>
@@ -25,7 +25,15 @@ import Main from "../layouts/Main.astro";
 
 
 <style>
-    h1, h3{
+h1{
+  font-family: var(--Primær-H1-Size);
+}
+
+h2{
+  font-family: var(--Primær-H2-Size);
+}
+
+    h1, h2{
       text-align: center;
     }
 
