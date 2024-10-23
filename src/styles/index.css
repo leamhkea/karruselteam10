@@ -14,7 +14,7 @@ h1 {
   text-align: center;
   color: var(--White);
   position: absolute;
-  top: 74%;
+  top: 125%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: var(--Primær-H1-Size);
@@ -30,13 +30,13 @@ h3 {
   font-size: var(--Primær-H3-Size);
 }
 .h3-date {
-  top: 90%;
+  top: 135%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .h3-place {
-  top: 85%;
+  top: 139%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
