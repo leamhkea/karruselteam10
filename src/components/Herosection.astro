@@ -1,0 +1,73 @@
+---
+import "../styles/global.css";
+---
+
+<section class="herosection">
+    <h1>KARRUSEL</h1>
+    <h3 class="h3-date">27-29 TH AUGUST</h3>
+    <h3 class="h3-place">REFSHALEØEN</h3>
+
+</section>
+
+
+  <style>
+
+    .herosection {
+    background-image: url("herosection.webp");
+    background-size: cover; /* Dækker hele området uden at forvrænge billedet */
+    background-position: center; /* Centrer billedet */
+    background-repeat: no-repeat; /* Undgå gentagelse af billedet */
+    height: 100vh; /* Fyld hele browserens højde */
+    width: 100vw; /* Fyld hele browserens bredde */
+    overflow: hidden;
+    margin: 0;
+    }
+
+    h1 {
+    font-family: var(--Primær-H1-Font);
+    text-align: center;
+    color: var(--White);
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: var(--Primær-H1-Size);
+    letter-spacing: 0.2cap;
+    padding-bottom: 30px;
+    }
+
+    h3 {
+    font-family: var(--Primær-H3-Font);
+    text-align: center;
+    color: var(--White);
+    position: absolute;
+    font-size: var(--Primær-H3-Size);
+    }
+    .h3-date {
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+
+    .h3-place {
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+
+
+    @media (width < 800px) {
+    /* ved desktop */
+    h1 {
+    font-size: 4rem;
+    top: 90%;
+    }
+    .h3-date {
+    top: 95%;
+    }
+    .h3-place {
+    top: 99%;
+    }
+}
+
+  </style>

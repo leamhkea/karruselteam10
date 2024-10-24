@@ -1,18 +1,13 @@
 ---
-import "../styles/index.css";
 import Main from "./layouts/Main.astro";
+import Herosection from "../components/Herosection.astro";
 import Banner from "../components/Banner.astro";
 import Nyhedsbrev from "../components/Nyhedsbrev.astro";
 import Categori from "../components/Categori.astro";
 ---
 
     <Main>
-    <section class="herosection">
-      <h1>KARRUSEL</h1>
-      <h3 class="h3-date">27-29 TH AUGUST</h3>
-      <h3 class="h3-place">REFSHALEØEN</h3>
-
-    </section>
+    <Herosection/>
     <Banner />
     <Categori />
     <Nyhedsbrev />
