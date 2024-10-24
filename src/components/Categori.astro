@@ -3,11 +3,10 @@ import "../styles/global.css";
 ---
 
 <section class="categori">
-  <a href="listview.astro"
-    ><div>
+  <a href="artists/">
+    <div>
       <img src="kategorilineup.svg" alt="kategorilineup" />
       <h2>SE VORES LINEUP</h2>
-      <p>Klik ind og se det vilde Lineup af kunstnere!</p>
     </div>
   </a>
 
@@ -42,14 +41,6 @@ import "../styles/global.css";
     padding-top: 1rem;
   }
 
-  @media (width <= 800px) {
-    /* Ved mobile størrelse */
-    .categori {
-      grid-template-columns: 1fr;
-      padding: 4rem;
-    }
-  }
-
   @media (width > 800px) {
     /* Ved desktop størrelse */
     .categori {
@@ -61,6 +52,11 @@ import "../styles/global.css";
 
   @media (width < 799px) {
     /* Ved mobile størrelse */
+
+    .categori {
+      grid-template-columns: 1fr;
+      padding: 4rem;
+    }
     p{
       padding-bottom: 4rem;
     }

@@ -6,7 +6,7 @@ console.log(data)
 ---
 
 <li>
-    <img src={"images/"+data.image} alt={data.artist}>
+    <img src={"/images/"+data.image} alt={data.artist}>
     <a href={"artists/"+data.slug + "/"}>
     <figure>
     <h3>{data.artist}</h3>
@@ -22,11 +22,22 @@ console.log(data)
 img{
     width: 50%;
 }
-
 a{
     text-decoration: none;
     color: var(--Black);
 }
+
+@media (width > 800px) {
+    /* Ved desktop størrelse */
+    :last-child{
+        padding-bottom: 3rem;
+    }
+  }
+
+@media (width < 799px) {
+    /* Ved mobile størrelse */
+
+
 
 
 
