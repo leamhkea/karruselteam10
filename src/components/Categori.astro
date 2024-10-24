@@ -26,7 +26,6 @@ import "../styles/global.css";
   
   .categori {
     display: grid;
-    padding: 10rem;
   }
 
   a {
@@ -46,7 +45,8 @@ import "../styles/global.css";
   @media (width <= 800px) {
     /* Ved mobile størrelse */
     .categori {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
+      padding: 4rem;
     }
   }
 
@@ -55,6 +55,14 @@ import "../styles/global.css";
     .categori {
       grid-template-columns: 1fr 1fr;
       gap: 4rem;
+      padding: 10rem;
+    }
+  }
+
+  @media (width < 799px) {
+    /* Ved mobile størrelse */
+    p{
+      padding-bottom: 4rem;
     }
   }
 </style>

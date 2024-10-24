@@ -45,5 +45,12 @@ h3 {
   /* ved desktop */
   h1 {
     font-size: 5rem;
+    top: 160%;
+  }
+  .h3-date {
+    top: 170%;
+  }
+  .h3-place {
+    top: 175%;
   }
 }
