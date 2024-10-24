@@ -24,8 +24,15 @@ import Main from "../layouts/Main.astro";
 ---
 
 <Main>
-<h1>{artist.artist}</h1>
-<p>{artist.tekst}</p>
+  <section>
+    <div>
+      <h1>{artist.artist}</h1>
+      <p>{artist.tekst}</p>
+    </div>
+    <div>
+      <img src={"../../images/"+ artist.image} alt=artist.artist}>
+    </div>  
+  </section>
 
 </Main>
 
@@ -34,14 +41,26 @@ import Main from "../layouts/Main.astro";
 
 h1{
   font-family: var(--Primær-H1-Size);
-  font-size: var(--Primær-H2-Size);
-  padding-top: 4rem;
+  font-size: var(--Primær-H3-Size);
   padding-bottom: 2rem;
-  text-align: center;
 }
 
 p{
   padding-bottom: 4rem;
+}
+
+section{
+  padding: 5rem 2rem;
+  gap: 5%;
+}
+
+
+@media (width > 800px){
+  /* ved desktop */
+  section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 </style>
