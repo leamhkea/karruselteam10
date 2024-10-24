@@ -1,4 +1,6 @@
 ---
+
+
 // @ts-nocheck
 export async function getStaticPaths() {
   const url = "https://alvenwirzpgcdjpfhrzm.supabase.co/rest/v1/karrussel";
@@ -18,9 +20,28 @@ export async function getStaticPaths() {
 }
 
 const { artist } = Astro.props;
-
+import Main from "../layouts/Main.astro";
 ---
 
+<Main>
 <h1>{artist.artist}</h1>
 <p>{artist.tekst}</p>
 
+</Main>
+
+
+<style>
+
+h1{
+  font-family: var(--Primær-H1-Size);
+  font-size: var(--Primær-H2-Size);
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+p{
+  padding-bottom: 4rem;
+}
+
+</style>

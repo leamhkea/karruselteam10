@@ -5,16 +5,16 @@ const { data } = Astro.props;
 console.log(data)
 ---
 
+<a href={data.slug + "/"}>
 <li>
     <img src={"/images/"+data.image} alt={data.artist}>
-    <a href={"artists/"+data.slug + "/"}>
     <figure>
     <h3>{data.artist}</h3>
     <p>{data.time}</p>
     <p>{data.genre}</p>
 </figure>
-</a>
 </li>
+</a>
 
 
 <style>
